@@ -1,7 +1,7 @@
 public class Account {
     public static final Account account = new Account();
 
-    private volatile long balance = 0;
+    private long balance = 0;
 
     private Account() {
     }
