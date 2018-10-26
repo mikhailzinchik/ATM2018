@@ -17,14 +17,14 @@ public class Account {
         balance -= amount;
     }
 
-    synchronized public void deposit(long amount) {
+    synchronized void deposit(long amount) {
         if (amount < 0) {
             throw new RuntimeException("Wrong amount. Please, input amonut more then 0");
         }
         balance += amount;
     }
 
-    public long getBalance() {
+    public synchronized long getBalance() {
         return balance;
     }
 }
