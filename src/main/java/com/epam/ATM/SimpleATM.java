@@ -1,5 +1,6 @@
-public class SimpleATM implements ATM {
+package com.epam.ATM;
 
+public class SimpleATM implements ATM {
 
     public void withdraw(long amount, Account account) {
         account.withdraw(amount);
@@ -7,11 +8,9 @@ public class SimpleATM implements ATM {
 
     public void deposit(long amount, Account account) {
         account.deposit(amount);
-
     }
 
     public long getBalance(Account account) {
-
         return account.getBalance();
     }
 }
