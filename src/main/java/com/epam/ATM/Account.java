@@ -1,7 +1,6 @@
 package com.epam.ATM;
 
 /**
- * The com.epam.ATM.Account is a lazy-init singleton class that ATMs are working with.
  * It provides methods to deposit and withdraw the balance.
  */
 public class Account {
